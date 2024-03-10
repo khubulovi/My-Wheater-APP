@@ -1,5 +1,6 @@
-package com.example.myapplication.experiments
+package com.example.myapplication.view.experiments
 
+import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -13,6 +14,7 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.Fragment
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import coil.api.load
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentThreadsBinding
 import java.util.Date
@@ -58,8 +60,11 @@ class ThreadsFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("CheckResult")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.imageView1.load("https://i.pinimg.com/originals/ab/91/06/ab91067a11279f2f90892b92f8682dbe.png")
+        binding.imageView2.load("https://i.pinimg.com/originals/ab/91/06/ab91067a11279f2f90892b92f8682dbe.png")
         initButtonMainThread()
         initButtonWorkerThread()
         initButtonHandlerThread()

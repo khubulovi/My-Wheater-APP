@@ -9,8 +9,8 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.myapplication.view.main.MainActivityFragment
 import com.example.myapplication.R
-import com.example.myapplication.experiments.MainBroadcastReceiver
-import com.example.myapplication.experiments.ThreadsFragment
+import com.example.myapplication.view.experiments.MainBroadcastReceiver
+import com.example.myapplication.view.experiments.ThreadsFragment
 
 private val broadcastReceiver = MainBroadcastReceiver()
 

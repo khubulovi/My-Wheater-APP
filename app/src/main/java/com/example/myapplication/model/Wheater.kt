@@ -8,7 +8,9 @@ import android.os.Parcelable
 data class Wheater(
     val city: City = getDefaultCity(),
     val temperature: Int = 0,
-    val feelsLike: Int = 0
+    val feelsLike: Int = 0,
+    val condition : String = "Sunny",
+    val icon : String? = "bkn-n"
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readParcelable<City>(City::class.java.classLoader) ?: getDefaultCity(),

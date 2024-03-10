@@ -3,7 +3,7 @@ package com.example.myapplication.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class City(val city: String?, val lan:Double, val lon:Double) : Parcelable{
+data class City(val city: String?, val lat:Double, val lon:Double) : Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readDouble(),

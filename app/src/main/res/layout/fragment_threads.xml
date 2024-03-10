@@ -5,12 +5,21 @@
     android:layout_height="match_parent"
     android:background="@color/ic_launcher_world_background">
 
+
     <LinearLayout
         android:id="@+id/mainContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_1"
+            android:contentDescription="@string/visible_image" />
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,6 +88,11 @@
             android:layout_marginTop="5dp"
             android:text="@string/service_broadcast"
             android:textSize="20sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_2"
+            android:contentDescription="@string/visible_image" />
 
     </LinearLayout>
 </ScrollView>

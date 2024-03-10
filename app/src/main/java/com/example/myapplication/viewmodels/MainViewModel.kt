@@ -4,13 +4,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.myapplication.R
-import com.example.myapplication.model.Repository
-import com.example.myapplication.model.RepositoryImpl
+import com.example.myapplication.repository.MainRepository
+import com.example.myapplication.repository.MainRepositoryImpl
 import java.lang.Thread.sleep
 
 class MainViewModel(
     private val liveDataObserve: MutableLiveData<Any> = MutableLiveData(),
-    private val repositoryImpl: Repository = RepositoryImpl()
+    private val mainRepositoryImpl: MainRepository = MainRepositoryImpl()
 ) :
     ViewModel() {
 
@@ -35,17 +35,14 @@ class MainViewModel(
         _icon.value = R.drawable.ic_launcher_world_foreground
     }
 
-    fun getWeatherFromRemoteSource() = getDataFromLocalSource(isGeo = true)
-
-
     private fun getDataFromLocalSource(isGeo: Boolean) {
         liveDataObserve.value = AppState.Loading
         Thread {
             sleep(1000)
             liveDataObserve.postValue(
                 AppState.Sucsess(
-                    if (isGeo) repositoryImpl.getWheatherFromLocaleStorageGeo()
-                    else repositoryImpl.getWheatherFromLocaleStorageWorld()
+                    if (isGeo) mainRepositoryImpl.getWheatherFromLocaleStorageGeo()
+                    else mainRepositoryImpl.getWheatherFromLocaleStorageWorld()
                 )
             )
         }.start()

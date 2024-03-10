@@ -23,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".experiments.MainService" />
-        <receiver android:name=".experiments.MainBroadcastReceiver"
+        <service android:name=".view.experiments.MainService" />
+        <receiver android:name=".view.experiments.MainBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED" />

@@ -1,6 +1,10 @@
-package com.example.myapplication.model
+package com.example.myapplication.repository
 
-class RepositoryImpl:Repository {
+import com.example.myapplication.model.Wheater
+import com.example.myapplication.model.getGeoCities
+import com.example.myapplication.model.getWorldCities
+
+class MainRepositoryImpl: MainRepository {
     override fun getWheatherFromServer(): Wheater {
         return Wheater()
     }
