@@ -11,7 +11,7 @@ import com.example.myapplication.view.details.DetailsFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentMainActivityBinding
 import com.example.myapplication.model.Wheater
-import com.example.myapplication.viewmodels.AppState
+import com.example.myapplication.app.AppState
 import com.example.myapplication.viewmodels.MainViewModel
 import com.google.android.material.snackbar.Snackbar
 
@@ -64,6 +64,7 @@ class MainActivityFragment : Fragment() {
             }
         }
     }
+
 
     override fun onDestroy() {
         adapter.removeListener()

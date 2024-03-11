@@ -11,6 +11,7 @@ import com.example.myapplication.view.main.MainActivityFragment
 import com.example.myapplication.R
 import com.example.myapplication.view.experiments.MainBroadcastReceiver
 import com.example.myapplication.view.experiments.ThreadsFragment
+import com.example.myapplication.view.history.HistoryFragment
 
 private val broadcastReceiver = MainBroadcastReceiver()
 
@@ -45,6 +46,15 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.fragment_container_view_tag, ThreadsFragment.newInstance())
                         .addToBackStack("")
                         .commit()
+                }
+                true
+            }
+            R.id.menu_history -> {
+                supportFragmentManager.apply {
+                    beginTransaction().replace(
+                        R.id.fragment_container_view_tag,
+                        HistoryFragment.newInstance()
+                    ).addToBackStack("").commit()
                 }
                 true
             }

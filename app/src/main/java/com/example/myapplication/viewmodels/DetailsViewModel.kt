@@ -2,6 +2,7 @@ package com.example.myapplication.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.myapplication.app.AppState
 import com.example.myapplication.model.FactDTO
 import com.example.myapplication.model.Wheater
 import com.example.myapplication.model.WheatherDTO

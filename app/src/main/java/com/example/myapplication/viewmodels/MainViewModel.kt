@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.myapplication.R
+import com.example.myapplication.app.AppState
 import com.example.myapplication.repository.MainRepository
 import com.example.myapplication.repository.MainRepositoryImpl
 import java.lang.Thread.sleep

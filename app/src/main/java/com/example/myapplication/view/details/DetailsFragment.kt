@@ -12,7 +12,7 @@ import coil.api.load
 import com.example.myapplication.R
 import com.example.myapplication.databinding.DetailsFragmentBinding
 import com.example.myapplication.model.Wheater
-import com.example.myapplication.viewmodels.AppState
+import com.example.myapplication.app.AppState
 import com.example.myapplication.viewmodels.DetailsViewModel
 import com.google.android.material.snackbar.Snackbar
 

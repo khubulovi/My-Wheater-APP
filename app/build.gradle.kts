@@ -41,6 +41,7 @@ android {
     }
 }
 dependencies {
+    implementation ("androidx.room:room-runtime:2.6.1")
     implementation("com.squareup.okhttp3:logging-interceptor:3.12.2")
     implementation("io.coil-kt:coil:0.11.0")
     implementation("com.squareup.picasso:picasso:2.71828")
