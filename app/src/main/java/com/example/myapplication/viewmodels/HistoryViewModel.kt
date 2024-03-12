@@ -11,7 +11,7 @@ class HistoryViewModel(
     private val historyRepositoryImpl: LocalRepositoryImpl = LocalRepositoryImpl(getHistoryDao())
 ) : ViewModel() {
     fun getAllHistory() {
-        historyLiveData.value = AppState.Loading
         historyLiveData.value = AppState.Sucsess(historyRepositoryImpl.getAllHistory())
+        historyLiveData.value = AppState.Loading
     }
 }

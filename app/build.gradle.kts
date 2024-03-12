@@ -1,12 +1,13 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-
+    kotlin("kapt")
 }
 
 android {
     namespace = "com.example.myapplication"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.example.myapplication"
@@ -21,7 +22,6 @@ android {
     buildFeatures {
         viewBinding = true
     }
-
 
     buildTypes {
         release {
@@ -41,7 +41,9 @@ android {
     }
 }
 dependencies {
+    annotationProcessor ("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-runtime:2.6.1")
+    kapt ("androidx.room:room-compiler:2.6.1")
     implementation("com.squareup.okhttp3:logging-interceptor:3.12.2")
     implementation("io.coil-kt:coil:0.11.0")
     implementation("com.squareup.picasso:picasso:2.71828")
