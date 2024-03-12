@@ -22,7 +22,7 @@ class HistoryAdapter : RecyclerView.Adapter<HistoryAdapter.RecyclerItemViewHolde
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerItemViewHolder {
         return RecyclerItemViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.fragment_history, parent, false) as View
+                .inflate(R.layout.history_adapter_rycyler_item, parent, false) as View
         )
     }
 

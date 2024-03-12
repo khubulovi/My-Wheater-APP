@@ -41,7 +41,7 @@ class HistoryFragment : Fragment() {
 
             is AppState.Loading -> {
                 binding.historyFragmentRecyclerview.visibility = View.GONE
-                binding.loadingView.visibility = View.VISIBLE
+                binding.loadingView.visibility = View.GONE
             }
 
             is AppState.Eror -> {
