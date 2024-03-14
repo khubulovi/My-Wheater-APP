@@ -1,4 +1,4 @@
-package com.example.myapplication.view.experiments
+package com.example.myapplication.view
 
 import android.content.BroadcastReceiver
 import android.content.Context

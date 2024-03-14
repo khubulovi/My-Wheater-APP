@@ -9,9 +9,9 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.myapplication.view.main.MainActivityFragment
 import com.example.myapplication.R
-import com.example.myapplication.view.experiments.MainBroadcastReceiver
 import com.example.myapplication.view.experiments.ThreadsFragment
 import com.example.myapplication.view.history.HistoryFragment
+import com.example.myapplication.view.phonecontacts.ContentProvaiderFragment
 
 private val broadcastReceiver = MainBroadcastReceiver()
 
@@ -54,6 +54,15 @@ class MainActivity : AppCompatActivity() {
                     beginTransaction().replace(
                         R.id.fragment_container_view_tag,
                         HistoryFragment.newInstance()
+                    ).addToBackStack("").commit()
+                }
+                true
+            }
+            R.id.menu_phonebook -> {
+                supportFragmentManager.apply {
+                    beginTransaction().replace(
+                        R.id.fragment_container_view_tag,
+                        ContentProvaiderFragment.newInstance()
                     ).addToBackStack("").commit()
                 }
                 true

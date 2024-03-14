@@ -5,10 +5,15 @@
         android:id="@+id/menu_threads"
         android:title="@string/threads"
         android:icon="@drawable/baseline_6_ft_apart_24"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/menu_history"
         android:title="@string/history"
         android:icon="@drawable/baseline_history_24"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_phonebook"
+        android:title="@string/phonebook"
+        android:icon="@drawable/baseline_contact_phone_24"
+        app:showAsAction="ifRoom" />
 </menu>
