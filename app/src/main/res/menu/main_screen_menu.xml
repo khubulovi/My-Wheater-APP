@@ -15,5 +15,10 @@
         android:id="@+id/menu_phonebook"
         android:title="@string/phonebook"
         android:icon="@drawable/baseline_contact_phone_24"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_map"
+        android:title="@string/map"
+        android:icon="@drawable/baseline_map_24"
+        app:showAsAction="always" />
 </menu>

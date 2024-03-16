@@ -27,6 +27,10 @@
     <string name="visible_image">Visible Image</string>
     <string name="history">History</string>
     <string name="phonebook">PhoneBook</string>
+    <string name="map">Map</string>
+    <string name="default_adress">Default Address</string>
+    <string name="search">Search</string>
+    <string name="Something">TODO</string>
 
 
 </resources>
