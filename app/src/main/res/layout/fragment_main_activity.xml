@@ -30,6 +30,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="80dp" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainFragmentFABLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/Something"
+        android:src="@android:drawable/ic_dialog_map"
+        app:layout_constraintBottom_toTopOf="@+id/mainFragmentFAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="30sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
 
     <FrameLayout
         android:id="@+id/anotherLayout"
@@ -52,8 +64,6 @@
             android:layout_gravity="center"
             tools:layout_editor_absoluteX="167dp"
             tools:layout_editor_absoluteY="369dp" />
-
-
     </FrameLayout>
 
 
