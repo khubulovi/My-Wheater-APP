@@ -9,7 +9,7 @@
         android:id="@+id/textAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Москва, Красная площадь 1" />
+        tools:text="Something" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,10 +22,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:ems="10"
+            android:hint="@string/default_adress"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/default_adress"
-            android:autofillHints=""
+            android:textColorHint="#546E7A"
             tools:ignore="LabelFor,VisualLintTextFieldSize" />
 
         <Button

@@ -5,13 +5,13 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.location.Address
 import android.location.Geocoder
-import androidx.fragment.app.Fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentMapsMainBinding
 import com.google.android.gms.maps.GoogleMap
@@ -109,10 +109,12 @@ class MapsFragment : Fragment() {
 
     private fun addMarkerToArray(location: LatLng) {
         val markers = setMarker(location, marker.size.toString())
-        marker.add(markers)
+        if (markers != null) {
+            marker.add(markers)
+        }
     }
 
-    private fun setMarker(location: LatLng, toString: String): Marker {
+    private fun setMarker(location: LatLng, toString: String): Marker? {
         return map.addMarker(
             MarkerOptions().position(location).title(toString)
                 .icon(BitmapDescriptorFactory.defaultMarker())
