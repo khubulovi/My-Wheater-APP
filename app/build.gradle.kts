@@ -3,11 +3,13 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.example.myapplication"
     compileSdk = 34
+
 
 
     defaultConfig {
@@ -43,6 +45,7 @@ android {
 }
 dependencies {
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.firebase:firebase-messaging:23.4.1")
     annotationProcessor ("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-runtime:2.6.1")
     kapt ("androidx.room:room-compiler:2.6.1")
@@ -65,3 +68,4 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
